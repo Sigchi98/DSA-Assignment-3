@@ -14,9 +14,9 @@ public:
                 --j;
             }
 
-            std::swap(nums[i], nums[j]);
+            swap(nums[i], nums[j]);
         }
 
-        std::reverse(nums.begin() + i + 1, nums.end());
+        reverse(nums.begin() + i + 1, nums.end());
     }
 };
