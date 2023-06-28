@@ -5,7 +5,7 @@ public:
         int closestSum = 0;
         int minDiff = INT_MAX;
 
-        std::sort(nums.begin(), nums.end());
+        sort(nums.begin(), nums.end());
 
         for (int i = 0; i < n - 2; ++i) {
             int left = i + 1;
@@ -13,7 +13,7 @@ public:
 
             while (left < right) {
                 int sum = nums[i] + nums[left] + nums[right];
-                int diff = std::abs(target - sum);
+                int diff = abs(target - sum);
 
                 if (diff < minDiff) {
                     minDiff = diff;
